@@ -1,0 +1,482 @@
+BUILD A COMPLETE PROFESSIONAL WEBSITE FOR TP WINDOWS & DOORS
+
+IMPORTANT:
+Create a premium, modern, fast-loading website similar in layout, structure, professionalism, and user experience to ltbopen.com, but do NOT copy their branding, text, logo, code, or copyrighted content.
+
+The website must feel like a large established American window and door company.
+
+PRIMARY COLORS:
+- Light Blue #7EC8E3
+- Navy #0B2545
+- White #FFFFFF
+- Light Gray #F5F8FB
+
+TYPOGRAPHY:
+- Modern clean font
+- Large bold headings
+- Premium contractor style
+- Mobile-first design
+
+COMPANY INFORMATION:
+
+Company Name:
+TP Windows & Doors
+
+Owner:
+Umed Hotamov
+
+Phone:
+(267) 939-0320
+
+Email:
+hellousa84@gmail.com
+
+Address:
+60 Platt Place
+Feasterville-Trevose, PA 19053
+
+Service Areas:
+Pennsylvania & New Jersey
+
+Business Hours:
+Monday-Friday 8AM-6PM
+Saturday 9AM-3PM
+Sunday By Appointment
+
+=================================================
+HEADER
+=================================================
+
+Top Bar:
+- Call Now (267) 939-0320
+- Free Estimates
+- Licensed & Insured
+
+Main Navigation:
+Home
+Windows
+Entry Doors
+Patio Doors
+Gallery
+Reviews
+About
+Contact
+
+Sticky Navigation
+Mobile Hamburger Menu
+
+Primary CTA Button:
+GET FREE ESTIMATE
+
+=================================================
+HOME PAGE
+=================================================
+
+SECTION 1 - HERO
+
+Large full width hero image
+
+Headline:
+Premium Windows & Doors Installed By Professionals
+
+Subheadline:
+Serving Pennsylvania & New Jersey with high-quality window and door replacement services.
+
+Buttons:
+Get Free Estimate
+Call Now
+
+Trust Badges:
+Licensed & Insured
+Energy Efficient Products
+Professional Installation
+Free Estimates
+
+=================================================
+SECTION 2 - WHY CHOOSE US
+=================================================
+
+4 Cards
+
+Professional Installation
+
+Energy Efficient Products
+
+Top Quality Materials
+
+Customer Satisfaction
+
+=================================================
+SECTION 3 - OUR PRODUCTS
+=================================================
+
+Display categories exactly like a premium company website.
+
+WINDOWS
+
+Double Hung Windows
+
+Casement Windows
+
+Sliding Windows
+
+Picture Windows
+
+Bay Windows
+
+Black Modern Windows
+
+ENTRY DOORS
+
+Fiberglass Entry Doors
+
+Steel Entry Doors
+
+Modern Front Doors
+
+Double Entry Doors
+
+PATIO DOORS
+
+Sliding Patio Doors
+
+French Patio Doors
+
+Large Glass Patio Doors
+
+Each category must have:
+
+Image
+
+Short Description
+
+Learn More Button
+
+=================================================
+SECTION 4 - INSTALLATION PROCESS
+=================================================
+
+Step 1
+
+Free Consultation
+
+Step 2
+
+Professional Measurement
+
+Step 3
+
+Product Selection
+
+Step 4
+
+Installation
+
+Step 5
+
+Final Inspection
+
+Use modern icon cards.
+
+=================================================
+SECTION 5 - BEFORE & AFTER
+=================================================
+
+Large image gallery slider
+
+Window Before & After
+
+Door Before & After
+
+Modern card layout
+
+=================================================
+SECTION 6 - REVIEWS
+=================================================
+
+Display review cards
+
+5 Star Layout
+
+Customer Name
+
+Location
+
+Review Text
+
+Minimum 6 reviews
+
+=================================================
+SECTION 7 - SERVICE AREAS
+=================================================
+
+Pennsylvania
+
+Philadelphia
+
+Bensalem
+
+Feasterville
+
+Richboro
+
+Southampton
+
+Newtown
+
+New Jersey
+
+Cherry Hill
+
+Marlton
+
+Mount Laurel
+
+Moorestown
+
+Voorhees
+
+=================================================
+SECTION 8 - CTA
+=================================================
+
+Ready To Upgrade Your Home?
+
+Get A Free Estimate Today
+
+Button:
+Schedule Free Consultation
+
+=================================================
+WINDOWS PAGE
+=================================================
+
+Hero Banner
+
+Professional Window Replacement
+
+Detailed sections for:
+
+Double Hung
+
+Casement
+
+Sliding
+
+Picture
+
+Bay
+
+Black Modern
+
+Each section includes:
+
+Large image
+
+Features
+
+Benefits
+
+Energy efficiency
+
+Request quote button
+
+=================================================
+ENTRY DOORS PAGE
+=================================================
+
+Hero Banner
+
+Premium Entry Doors
+
+Fiberglass Doors
+
+Steel Doors
+
+Modern Doors
+
+Double Entry Doors
+
+Each section:
+
+Image
+
+Features
+
+Benefits
+
+CTA
+
+=================================================
+PATIO DOORS PAGE
+=================================================
+
+Hero Banner
+
+Sliding Patio Doors
+
+French Patio Doors
+
+Large Glass Patio Doors
+
+Features
+
+Benefits
+
+Gallery
+
+CTA
+
+=================================================
+GALLERY PAGE
+=================================================
+
+Filter Buttons
+
+Windows
+
+Entry Doors
+
+Patio Doors
+
+Before & After
+
+Grid Gallery
+
+Lightbox Gallery
+
+=================================================
+REVIEWS PAGE
+=================================================
+
+Large Review Showcase
+
+Star Ratings
+
+Review Cards
+
+Customer Testimonials
+
+=================================================
+ABOUT PAGE
+=================================================
+
+Company Story
+
+Mission
+
+Values
+
+Why Customers Choose Us
+
+Licensed & Insured
+
+Professional Installation Team
+
+Serving PA & NJ
+
+=================================================
+CONTACT PAGE
+=================================================
+
+Large Contact Form
+
+Name
+
+Phone
+
+Email
+
+Project Type
+
+Message
+
+Submit Button
+
+Contact Information Block
+
+Phone:
+(267) 939-0320
+
+Email:
+hellousa84@gmail.com
+
+Address:
+60 Platt Place
+Feasterville-Trevose PA 19053
+
+Google Maps Section
+
+=================================================
+FOOTER
+=================================================
+
+TP Windows & Doors
+
+Quick Links
+
+Windows
+
+Entry Doors
+
+Patio Doors
+
+Gallery
+
+Reviews
+
+About
+
+Contact
+
+Phone:
+(267) 939-0320
+
+Email:
+hellousa84@gmail.com
+
+Service Areas:
+Pennsylvania & New Jersey
+
+Social Media Icons
+
+Copyright:
+© TP Windows & Doors. All Rights Reserved.
+
+=================================================
+TECHNICAL REQUIREMENTS
+=================================================
+
+Responsive Mobile Design
+
+Fast Loading
+
+SEO Optimized
+
+Modern Animations
+
+Smooth Scrolling
+
+Image Optimization
+
+Professional Layout
+
+High Conversion Design
+
+Modern Cards
+
+Premium Contractor Appearance
+
+Sticky Header
+
+Floating Call Button
+
+Floating Get Estimate Button
+
+Google Maps Integration
+
+Contact Form Functionality
+
+Professional American Window & Door Company Design
+
+Build the complete website with production-quality code and premium modern styling.
