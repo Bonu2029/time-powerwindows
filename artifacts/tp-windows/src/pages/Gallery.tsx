@@ -21,8 +21,6 @@ import p3 from "@assets/ChatGPT_Image_Jun_14,_2026_at_02_09_09_PM_1781468121470.
 
 import ba1 from "@assets/ChatGPT_Image_Jun_14,_2026_at_02_55_58_PM_1781468128958.png";
 import ba2 from "@assets/ChatGPT_Image_Jun_14,_2026_at_02_56_07_PM_1781468130859.png";
-import team1 from "@assets/ChatGPT_Image_Jun_14,_2026_at_02_37_27_PM_1781468127005.png";
-
 const allImages = [
   { id: 1, src: w1, category: "windows", alt: "Double Hung Windows" },
   { id: 2, src: d1, category: "entry-doors", alt: "Fiberglass Entry Door" },
@@ -39,7 +37,6 @@ const allImages = [
   { id: 13, src: w5, category: "windows", alt: "Bay Window" },
   { id: 14, src: p3, category: "patio-doors", alt: "Large Glass Patio Doors" },
   { id: 15, src: d4, category: "entry-doors", alt: "Double Entry Doors" },
-  { id: 16, src: team1, category: "before-after", alt: "Professional Installation" },
 ];
 
 const categories = [
