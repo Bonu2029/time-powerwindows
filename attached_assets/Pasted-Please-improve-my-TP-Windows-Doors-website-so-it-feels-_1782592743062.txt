@@ -1,0 +1,104 @@
+Please improve my TP Windows & Doors website so it feels closer in quality, trust, and conversion power to https://newvisionwindows.com, while keeping my own brand name, phone number, colors where appropriate, and service areas.
+
+Main goal:
+Make the site feel complete, professional, trustworthy, and ready for real customers. Do not copy New Vision’s exact text, branding, logo, or images. Use it only as inspiration for structure and quality.
+
+Please update these areas:
+
+1. Homepage hero
+- Make the hero feel more premium and polished.
+- Add a strong local trust message above the headline.
+- Keep clear CTAs: “Get Free Estimate,” “Get Instant Quote,” and phone call.
+- Add trust stats near the hero: years of experience, licensed & insured, free estimates, energy efficient products, 5-star rated.
+- Make sure the hero works well on mobile.
+
+2. Trust badges section
+Add a section near the top with credibility cards:
+- 5-star customer rating
+- Licensed & insured
+- Free estimates
+- Energy efficient products
+- Professional installation
+- Warranty protection
+
+3. Instant Quote page
+Improve `/instant-quote` into a real quote flow:
+- Step 1: Select window/door types
+- Add quantity controls with plus/minus buttons for each item
+- Include common options: double hung, slider, casement, picture, bay/bow, patio door, entry door
+- Step 2: Contact details and timeline
+- Fields: name, phone, email, city, project timeline, notes
+- Add a quote summary sidebar/card
+- Add “What happens next?” section
+- Add “Guaranteed inclusions” section
+- Add quote FAQs
+- Make the page look polished and easy to use
+
+4. Warranty section
+Add a homepage section titled something like “Warranty Protection You Can Count On.”
+Include:
+- Product/manufacturer warranty
+- Labor/installation warranty
+- Clean installation promise
+- Final inspection
+Use confident but honest copy.
+
+5. Reviews section
+Make reviews look more real and trustworthy:
+- Add star ratings
+- Add customer names
+- Add city/state
+- Add project type
+- Add CTA to read more reviews
+Use placeholder reviews only if real reviews are not available, but make the layout ready for real reviews.
+
+6. Gallery page
+Improve `/gallery`:
+- Add project cards with images
+- Each card should include city, project type, short description, and before/after labels where possible
+- Add filter buttons or categories: Windows, Entry Doors, Patio Doors, Before & After
+- Add CTA at bottom: “Start Your Project”
+
+7. Service areas
+Make the service area section stronger:
+- Split Pennsylvania and New Jersey areas clearly
+- Add city/town cards or links
+- Include a short paragraph about serving local homeowners
+- Prepare structure for future individual city pages
+
+8. FAQ sections
+Add useful FAQs on the homepage and quote/contact pages:
+- How much does window replacement cost?
+- Are estimates free?
+- How long does installation take?
+- Do you offer financing?
+- What areas do you serve?
+- Are you licensed and insured?
+- What warranty is included?
+
+9. Contact / schedule flow
+Improve the contact page:
+- Keep the contact form
+- Add project timeline dropdown
+- Add preferred contact method
+- Add “What to expect after submitting” section
+- Add phone and email clearly
+- Make form validation/user feedback clean
+
+10. Polish and cleanup
+- Remove any visible development/demo-looking elements where possible.
+- Make sure all buttons link to the correct pages.
+- Make sure layout is responsive on mobile, tablet, and desktop.
+- Make sure text does not overlap.
+- Improve SEO titles/meta descriptions for main pages.
+- Keep the site fast and professional.
+- Do not add fake certifications unless they are clearly placeholders.
+- Do not copy copyrighted text or images from New Vision.
+
+Design direction:
+Use New Vision as inspiration for polish and structure, but keep TP Windows & Doors unique. The style should feel trustworthy, premium, local, and easy for homeowners to understand.
+
+After making changes:
+- Check homepage, instant quote, windows, gallery, reviews, about, and contact pages.
+- Fix any broken links or layout issues.
+- Make sure mobile navigation works.
