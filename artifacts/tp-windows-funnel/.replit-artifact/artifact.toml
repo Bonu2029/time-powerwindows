@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/tp-funnel/"
+title = "TP Windows & Doors Quote Funnel"
+version = "1.0.0"
+id = "artifacts/tp-windows-funnel"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/tp-funnel/" ]
+localPort = 22079
+
+[services.development]
+run = "pnpm --filter @workspace/tp-windows-funnel run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/tp-windows-funnel", "run", "build" ]
+publicDir = "artifacts/tp-windows-funnel/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22079"
+BASE_PATH = "/tp-funnel/"

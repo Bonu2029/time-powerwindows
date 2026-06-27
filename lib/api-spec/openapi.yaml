@@ -1,15 +1,18 @@
 openapi: 3.1.0
 info:
-  # Do not change the title, if the title changes, the import paths will be broken
   title: Api
   version: 0.1.0
-  description: API specification
+  description: API specification for TP Windows & Doors Quote Funnel
 servers:
   - url: /api
     description: Base API path
 tags:
   - name: health
     description: Health operations
+  - name: quotes
+    description: Quote operations
+  - name: appointments
+    description: Appointment operations
 paths:
   /healthz:
     get:
@@ -24,13 +27,401 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+
+  /quotes:
+    post:
+      operationId: createQuote
+      tags: [quotes]
+      summary: Create a new quote
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/QuoteInput"
+      responses:
+        "201":
+          description: Quote created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Quote"
+        "400":
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+  /quotes/{id}:
+    get:
+      operationId: getQuote
+      tags: [quotes]
+      summary: Get a quote by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Quote found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Quote"
+        "404":
+          description: Quote not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    patch:
+      operationId: updateQuote
+      tags: [quotes]
+      summary: Update a quote
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/QuoteUpdate"
+      responses:
+        "200":
+          description: Quote updated
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Quote"
+        "404":
+          description: Quote not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+  /quotes/{id}/items:
+    get:
+      operationId: listQuoteItems
+      tags: [quotes]
+      summary: List items in a quote
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Items found
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/QuoteItem"
+        "404":
+          description: Quote not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+  /quotes/summary:
+    get:
+      operationId: getQuoteSummary
+      tags: [quotes]
+      summary: Get quote summary stats
+      responses:
+        "200":
+          description: Summary stats
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/QuoteSummary"
+
+  /appointments:
+    post:
+      operationId: createAppointment
+      tags: [appointments]
+      summary: Create a new appointment
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AppointmentInput"
+      responses:
+        "201":
+          description: Appointment created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Appointment"
+        "400":
+          description: Invalid input or slot not available
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+  /appointments/availability:
+    get:
+      operationId: getAvailability
+      tags: [appointments]
+      summary: Get available appointment slots
+      parameters:
+        - name: from
+          in: query
+          required: true
+          schema:
+            type: string
+            format: date
+        - name: to
+          in: query
+          required: true
+          schema:
+            type: string
+            format: date
+      responses:
+        "200":
+          description: Available slots
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/AvailabilitySlot"
+
+  /appointments/upcoming:
+    get:
+      operationId: getUpcomingAppointments
+      tags: [appointments]
+      summary: Get upcoming appointments
+      responses:
+        "200":
+          description: Upcoming appointments
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Appointment"
+
 components:
   schemas:
     HealthStatus:
       type: object
+      required: [status]
       properties:
         status:
           type: string
-      required:
-        - status
 
+    Error:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: string
+
+    Quote:
+      type: object
+      required: [id, fullName, email, phone, projectAddress, status, createdAt]
+      properties:
+        id:
+          type: integer
+        fullName:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+        projectAddress:
+          type: string
+        status:
+          type: string
+          enum: [draft, submitted, confirmed, completed]
+        estimatedTotal:
+          type: ["number", "null"]
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: ["string", "null"]
+          format: date-time
+
+    QuoteInput:
+      type: object
+      required: [fullName, email, phone, projectAddress, items]
+      properties:
+        fullName:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+        projectAddress:
+          type: string
+        items:
+          type: array
+          items:
+            $ref: "#/components/schemas/QuoteItemInput"
+
+    QuoteUpdate:
+      type: object
+      properties:
+        fullName:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+        projectAddress:
+          type: string
+        status:
+          type: string
+          enum: [draft, submitted, confirmed, completed]
+        items:
+          type: array
+          items:
+            $ref: "#/components/schemas/QuoteItemInput"
+
+    QuoteItem:
+      type: object
+      required: [id, quoteId, windowType, quantity]
+      properties:
+        id:
+          type: integer
+        quoteId:
+          type: integer
+        windowType:
+          type: string
+        quantity:
+          type: integer
+        size:
+          type: ["string", "null"]
+        interiorColor:
+          type: ["string", "null"]
+        exteriorColor:
+          type: ["string", "null"]
+        gridStyle:
+          type: ["string", "null"]
+        glassCoating:
+          type: ["string", "null"]
+        trimPackage:
+          type: ["string", "null"]
+        addOns:
+          type: ["string", "null"]
+        unitPrice:
+          type: ["number", "null"]
+        lineTotal:
+          type: ["number", "null"]
+
+    QuoteItemInput:
+      type: object
+      required: [windowType, quantity]
+      properties:
+        windowType:
+          type: string
+        quantity:
+          type: integer
+        size:
+          type: string
+        interiorColor:
+          type: string
+        exteriorColor:
+          type: string
+        gridStyle:
+          type: string
+        glassCoating:
+          type: string
+        trimPackage:
+          type: string
+        addOns:
+          type: string
+
+    QuoteSummary:
+      type: object
+      required: [totalQuotes, submittedQuotes, confirmedQuotes, completedQuotes]
+      properties:
+        totalQuotes:
+          type: integer
+        submittedQuotes:
+          type: integer
+        confirmedQuotes:
+          type: integer
+        completedQuotes:
+          type: integer
+        totalEstimatedValue:
+          type: ["number", "null"]
+
+    Appointment:
+      type: object
+      required: [id, fullName, email, phone, address, date, timeSlot, consultationType, duration, status, createdAt]
+      properties:
+        id:
+          type: integer
+        fullName:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+        address:
+          type: string
+        date:
+          type: string
+          format: date
+        timeSlot:
+          type: string
+        consultationType:
+          type: string
+        duration:
+          type: string
+        status:
+          type: string
+          enum: [scheduled, confirmed, cancelled, completed]
+        createdAt:
+          type: string
+          format: date-time
+
+    AppointmentInput:
+      type: object
+      required: [fullName, email, phone, address, date, timeSlot, consultationType]
+      properties:
+        fullName:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+        address:
+          type: string
+        date:
+          type: string
+          format: date
+        timeSlot:
+          type: string
+        consultationType:
+          type: string
+        duration:
+          type: string
+
+    AvailabilitySlot:
+      type: object
+      required: [date, timeSlot, isAvailable]
+      properties:
+        date:
+          type: string
+          format: date
+        timeSlot:
+          type: string
+        isAvailable:
+          type: boolean

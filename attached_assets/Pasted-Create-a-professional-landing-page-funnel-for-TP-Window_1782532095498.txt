@@ -1,0 +1,95 @@
+Create a professional landing page/funnel for TP Windows & Doors, inspired by the New Vision Windows website structure, but do not copy their exact design.
+The page must include these sections:
+Hero Section
+Cream luxury background.
+Left side: headline, short description, 2 CTA buttons.
+Right side: premium window materials graphic.
+CTA: Get Your Instant Quote.
+Window Materials Section
+Cards for:
+Vinyl Windows
+Aluminum Windows
+Wood-Clad Windows
+uPVC Windows
+Each card uses my provided image.
+Short description only, not full long text.
+Button: View Details.
+When user clicks a card/image/text, open a dedicated detail section/modal for that material.
+Operating Styles Section
+Grid cards for:
+Tilt & Turn Window
+Double Hung Window
+Twin Double Hung
+3X Double Hung
+Picture / Fixed
+2-lite Slider
+3-lite Slider
+Casement Window
+Double Casement
+Double Hung + Picture Combination
+Casement + Picture Combination
+5’ Sliding Patio Door
+6’ Sliding Patio Door
+Bay Window
+Bow Window
+Each card has image, title, and View Details button.
+Instant Quote System
+When user clicks Get Your Instant Quote, open a multi-step quote form.
+Step 1: Select Windows
+Show window style cards.
+Each card has:
+image
+title
+minus button
+quantity number
+plus button
+User can add multiple window types.
+Step 2: Contact & Timeline
+Full Name
+Email
+Phone Number
+Project Address
+Button: View Your Detailed Quote
+Quote Summary Page
+After form submit, show:
+Dark navy hero section.
+Text: Your quote is ready. Customize it below.
+Image of a house at the top.
+Summary card with estimated price.
+Selected windows with quantity controls.
+Size options: Small / Medium / Large.
+Finish upgrades:
+Interior color
+Exterior color
+Grid style
+Glass coating
+Trim package
+Add-ons with extra price.
+CTA: Book My Consultation
+Scheduling Page
+Calendar booking system.
+Shows available and unavailable dates.
+Time slots.
+Consultation type: In Person Consultation
+Duration: 1 hour
+Required fields:
+Full Name
+Email
+Phone Number
+Address
+Design Style:
+Premium luxury window company.
+Cream background.
+Dark navy text and sections.
+Gold accent buttons.
+Serif font for headings.
+Clean sans-serif font for body text.
+White cards with soft shadows.
+Rounded corners.
+Smooth hover animations.
+Mobile responsive.
+Important:
+Do not put too much text on the cards. Use short preview text only. Full descriptions, benefits, and ideal-for sections should appear only after clicking View Details.
+Goal:
+The website must work like a professional sales funnel:
+Window education → window selection → instant quote → customization → consultation booking.
