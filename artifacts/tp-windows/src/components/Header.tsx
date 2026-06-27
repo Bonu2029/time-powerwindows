@@ -26,6 +26,7 @@ export function Header() {
     { label: "Reviews", href: "/reviews" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
+    { label: "Get Quote", href: "/instant-quote" },
   ];
 
   return (

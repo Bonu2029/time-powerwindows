@@ -13,6 +13,7 @@ import Gallery from "@/pages/Gallery";
 import Reviews from "@/pages/Reviews";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
+import InstantQuote from "@/pages/InstantQuote";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ function Router() {
         <Route path="/reviews" component={Reviews} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
+        <Route path="/instant-quote" component={InstantQuote} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
