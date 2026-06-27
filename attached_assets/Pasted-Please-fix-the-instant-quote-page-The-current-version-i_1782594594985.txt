@@ -1,0 +1,162 @@
+Please fix the /instant-quote page. The current version is too simple because after the customer fills the form it only says we will contact them in 24 hours. I do NOT want that as the final experience.
+
+I want the instant quote flow to work more like New Vision Windows’ quote system, but using my own TP Windows & Doors brand, colors, copy, phone number, and service areas. Do not copy their exact text or images.
+
+Build a multi-step quote experience with this exact flow:
+
+STEP 1: Select Products
+- Show window and door product cards.
+- Include: Double Hung Window, Twin Double Hung, 3x Double Hung, Picture / Fixed, 2-lite Slider, 3-lite Slider, Casement, Double Casement, Bay Window, Bow Window, Entry Door, Patio Door.
+- Each card should have an image/icon, short description, starting price, and plus/minus quantity controls.
+- Customer can choose quantity for each product.
+- Show a sticky quote summary with selected items and estimated total.
+- Button text: “Get My Free Estimate”
+- The button should only continue if at least one product is selected.
+
+STEP 2: Customer Information
+After clicking “Get My Free Estimate,” show a form asking for:
+- Full name
+- Phone number
+- Email
+- Address
+- City/state
+- Preferred project timeline
+- Notes / project details
+
+Do not end here. After the customer submits this information, continue to the quote customization page. Do not show only a “we will contact you in 24 hours” message.
+
+STEP 3: Quote Summary + Customization
+After the info form, show a page/section that looks like a personalized quote summary.
+
+Top section:
+- Dark navy hero area
+- Text like: “Your quote is ready. Customize it below.”
+- Show customer’s selected package
+- Show a home/window image on the right
+- Add button: “Customize your quote”
+
+Main content:
+- Left side: selected windows/doors
+- Each selected item should show:
+  - product name
+  - quantity controls
+  - size options: Small, Medium, Large
+- Right side: sticky price card
+  - selected package/tier name
+  - total estimated price
+  - estimated monthly payment
+  - button: “Book my consultation”
+
+STEP 4: Finishes & Upgrades
+Under the selected windows section, add “Finishes & upgrades.”
+
+Include these option groups:
+- Grid style:
+  - None included
+  - Colonial + price per window
+  - Prairie + price per window
+  - Diamond + price per window
+
+- Interior color:
+  - Gallery White included
+  - Beige + price per window
+  - Bronze + price per window
+  - Modern Black + price per window
+  - Royal Brown + price per window
+
+- Exterior finish:
+  - Gallery White included
+  - Beige + price per window
+  - Bronze + price per window
+  - Modern Black + price per window
+  - Royal Brown + price per window
+
+- Add-ons:
+  - New Interior Trim + price per window
+  - Glass Coating + price per window
+  - R5 Glass Package + price per window
+
+When the customer selects upgrades, update the quote price automatically.
+
+STEP 5: Performance Tier
+Add a section titled “Choose your performance tier.”
+
+Create three pricing cards:
+1. Comfort
+2. Performance
+3. Pinnacle
+
+Each card should show:
+- total price
+- estimated monthly payment
+- short explanation
+- included features
+- warranty coverage
+- energy performance details
+
+The selected tier should be visually highlighted with a border/accent color. Default selected tier should be “Performance.”
+
+Example feature ideas:
+- Comfort: double-pane vinyl, Energy Star certified, lifetime manufacturer warranty, lifetime labor warranty.
+- Performance: foam-filled frame, stronger energy performance, better insulation, lifetime warranties.
+- Pinnacle: triple-pane glass, highest energy rating, upgraded screens, glass breakage warranty, expanded color options.
+
+Changing the tier should update the quote total.
+
+STEP 6: Ways to Maximize Your Investment
+Add two cards:
+- 0% Interest for up to 24 months
+- $0 Taxes / tax-free capital improvement where applicable
+
+Make this section look polished and professional.
+
+STEP 7: Book Consultation Calendar
+This is very important.
+
+When the customer clicks “Book my consultation,” do NOT just show a message saying someone will contact them.
+
+Show a scheduling section with:
+- Calendar UI
+- Available dates
+- Available time slots
+- In-person consultation option
+- 1 hour duration
+- Timezone: Eastern Time
+- Required date/time selection
+
+The customer should be able to select:
+- date
+- time slot
+- consultation type: in-home or virtual
+
+After selecting date/time, show additional appointment fields:
+- Full name
+- Email
+- Phone
+- Address
+- Notes
+- SMS consent checkbox
+
+Final button: “Submit Appointment Request”
+
+After final submit, show a polished confirmation page/card:
+- “Your consultation request has been received.”
+- Show selected date/time
+- Show project summary
+- Show estimated quote total
+- Show customer contact details
+- Explain that the team will confirm measurements and availability.
+
+IMPORTANT:
+- Do not use a simple toast message as the final result.
+- Do not stop the quote flow after the contact form.
+- The quote flow should feel like a full customer journey.
+- Make the design premium, clean, and mobile responsive.
+- Use dark navy, white/cream background, and gold accent buttons.
+- Keep TP Windows & Doors branding.
+- Make sure all calculations update when quantities, sizes, finishes, add-ons, and performance tier change.
+- If no real calendar integration exists, create a functional front-end calendar with mock available dates and times for now.
+- Make sure the quote state is preserved while moving between steps.
+- Make sure mobile layout works beautifully.
+
+Please implement this on /instant-quote and make all “Get Quote,” “Get Free Estimate,” and “Book Consultation” buttons point into this improved quote/scheduling flow.
