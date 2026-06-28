@@ -30,6 +30,18 @@ import baAfter3 from "@assets/Screenshot_2026-06-27_at_4.44.54_PM_1782593265908.
 import baBefore4 from "@assets/ChatGPT_Image_Jun_27,_2026_at_04_46_12_PM_(1)_1782593297367.png";
 import baAfter4 from "@assets/ChatGPT_Image_Jun_27,_2026_at_04_46_12_PM_(2)_1782593290552.png";
 
+import baBefore5 from "@assets/ChatGPT_Image_Jun_27,_2026_at_04_42_57_PM_(1)_1782606958629.png";
+import baAfter5 from "@assets/ChatGPT_Image_Jun_27,_2026_at_04_42_58_PM_(2)_1782606963257.png";
+
+import baBefore6 from "@assets/ChatGPT_Image_Jun_27,_2026_at_04_40_28_PM_(1)_1782606993629.png";
+import baAfter6 from "@assets/ChatGPT_Image_Jun_27,_2026_at_04_40_28_PM_(2)_1782606996179.png";
+
+import baBefore7 from "@assets/ChatGPT_Image_Jun_27,_2026_at_08_37_12_PM_(1)_1782607062443.png";
+import baAfter7 from "@assets/ChatGPT_Image_Jun_27,_2026_at_08_37_12_PM_(2)_1782607066962.png";
+
+import baBefore8 from "@assets/ChatGPT_Image_Jun_27,_2026_at_08_37_13_PM_(3)_1782607080848.png";
+import baAfter8 from "@assets/ChatGPT_Image_Jun_27,_2026_at_08_37_13_PM_(4)_1782607085621.png";
+
 const galleryItems = [
   { id: 1, src: w1, category: "windows", alt: "Double Hung Windows", city: "Cherry Hill, NJ", type: "Window Replacement", desc: "White vinyl double-hung windows installed on a classic colonial home." },
   { id: 2, src: d1, category: "entry-doors", alt: "Fiberglass Entry Door", city: "Bensalem, PA", type: "Entry Door", desc: "Modern fiberglass front door with sidelights and transom." },
@@ -51,6 +63,10 @@ const beforeAfterProjects = [
   { id: "ba2", before: baBefore2, after: baAfter2, city: "Mount Laurel, NJ", type: "Window & Shutter Update", desc: "Fresh white window frames with new black shutters for a bold, modern look." },
   { id: "ba3", before: baBefore3, after: baAfter3, city: "Bensalem, PA", type: "Window Replacement", desc: "Upgraded to sleek black-frame windows that dramatically improved curb appeal." },
   { id: "ba4", before: baBefore4, after: baAfter4, city: "Marlton, NJ", type: "Full Window Replacement", desc: "All windows replaced with high-efficiency double-hung units on a brick colonial." },
+  { id: "ba5", before: baBefore5, after: baAfter5, city: "Moorestown, NJ", type: "Window Upgrade", desc: "Traditional windows upgraded to modern white frames with colonial grids on a brick colonial home." },
+  { id: "ba6", before: baBefore6, after: baAfter6, city: "Feasterville, PA", type: "Full Window Replacement", desc: "Outdated double-hungs replaced with energy-efficient colonial-grid windows for a crisp, refreshed look." },
+  { id: "ba7", before: baBefore7, after: baAfter7, city: "Southampton, PA", type: "Patio Door Replacement", desc: "Worn white patio doors replaced with sleek, modern French doors with updated hardware." },
+  { id: "ba8", before: baBefore8, after: baAfter8, city: "Richboro, PA", type: "Entry Door Upgrade", desc: "Dated wooden double doors refinished with a fresh modern look and premium decorative glass inserts." },
 ];
 
 const categories = [
