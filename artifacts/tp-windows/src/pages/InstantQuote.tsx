@@ -464,7 +464,7 @@ export default function InstantQuote() {
   );
 
   /* ═══════ STEP 2: CUSTOMER INFO ═══════ */
-  const Step2 = () => (
+  const step2Element = (
     <motion.div key="step2" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }} transition={{ duration: 0.3 }}>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
         <div className="lg:col-span-2">
@@ -897,21 +897,19 @@ export default function InstantQuote() {
   );
 
   /* ═══════ STEP 7: BOOK CONSULTATION ═══════ */
-  const Step7 = () => {
-    const prevMonth = () => {
-      setCalendarMonth((p) => {
-        if (p.month === 0) return { year: p.year - 1, month: 11 };
-        return { year: p.year, month: p.month - 1 };
-      });
-    };
-    const nextMonth = () => {
-      setCalendarMonth((p) => {
-        if (p.month === 11) return { year: p.year + 1, month: 0 };
-        return { year: p.year, month: p.month + 1 };
-      });
-    };
-
-    return (
+  const prevMonth = () => {
+    setCalendarMonth((p) => {
+      if (p.month === 0) return { year: p.year - 1, month: 11 };
+      return { year: p.year, month: p.month - 1 };
+    });
+  };
+  const nextMonth = () => {
+    setCalendarMonth((p) => {
+      if (p.month === 11) return { year: p.year + 1, month: 0 };
+      return { year: p.year, month: p.month + 1 };
+    });
+  };
+  const step7Element = (
       <motion.div key="step7" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 20 }} transition={{ duration: 0.3 }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-primary text-center mb-3">Schedule Your Free Consultation</h2>
@@ -1056,7 +1054,6 @@ export default function InstantQuote() {
         </div>
       </motion.div>
     );
-  };
 
   /* ═══════ STEP 8: CONFIRMATION ═══════ */
   const Step8 = () => (
@@ -1186,12 +1183,12 @@ export default function InstantQuote() {
       <div className={`container mx-auto px-4 flex-grow ${step <= 2 ? "py-12" : step === 8 ? "py-16" : "py-10"}`}>
         <AnimatePresence mode="wait">
           {step === 1 && <Step1 />}
-          {step === 2 && <Step2 />}
+          {step === 2 && step2Element}
           {step === 3 && <Step3 />}
           {step === 4 && <Step4 />}
           {step === 5 && <Step5 />}
           {step === 6 && <Step6 />}
-          {step === 7 && <Step7 />}
+          {step === 7 && step7Element}
           {step === 8 && <Step8 />}
         </AnimatePresence>
       </div>
