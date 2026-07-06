@@ -3,15 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <script>
+      // GitHub Pages SPA fallback: restore the path saved by 404.html
+      (function() {
+        var saved = sessionStorage.getItem("__spa_path");
+        if (saved) {
+          sessionStorage.removeItem("__spa_path");
+          if (saved !== "/" && saved !== window.location.pathname) {
+            window.history.replaceState(null, "", saved);
+          }
+        }
+      })();
+    </script>
     <title>TP Windows &amp; Doors</title>
-    <meta name="description" content="TP Windows &amp; Doors — built on Replit. Update this description to reflect the app." />
+    <meta name="description" content="Premium replacement windows, entry doors, and patio doors for homes across Pennsylvania and New Jersey. Energy-efficient, expert installation, lifetime warranties." />
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content="TP Windows &amp; Doors" />
-    <meta property="og:description" content="TP Windows &amp; Doors — built on Replit. Update this description to reflect the app." />
+    <meta property="og:description" content="Premium replacement windows, entry doors, and patio doors for homes across Pennsylvania and New Jersey. Energy-efficient, expert installation, lifetime warranties." />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="TP Windows &amp; Doors" />
-    <meta name="twitter:description" content="TP Windows &amp; Doors — built on Replit. Update this description to reflect the app." />
+    <meta name="twitter:description" content="Premium replacement windows, entry doors, and patio doors for homes across Pennsylvania and New Jersey. Energy-efficient, expert installation, lifetime warranties." />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

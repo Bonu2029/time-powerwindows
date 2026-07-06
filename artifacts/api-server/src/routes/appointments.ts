@@ -1,5 +1,5 @@
 import { Router, type IRouter } from "express";
-import { eq, and, gte } from "drizzle-orm";
+import { eq, and, gte, lte } from "drizzle-orm";
 import { db, appointmentsTable } from "@workspace/db";
 import {
   CreateAppointmentBody,
@@ -33,7 +33,7 @@ router.post("/appointments", async (req, res): Promise<void> => {
     .from(appointmentsTable)
     .where(
       and(
-        eq(appointmentsTable.date, date),
+        eq(appointmentsTable.date, date.toISOString().split("T")[0]),
         eq(appointmentsTable.timeSlot, timeSlot),
         eq(appointmentsTable.status, "scheduled")
       )
@@ -44,7 +44,8 @@ router.post("/appointments", async (req, res): Promise<void> => {
     return;
   }
 
-  const [appointment] = await db.insert(appointmentsTable).values(parsed.data).returning();
+  const insertData = { ...parsed.data, date: parsed.data.date.toISOString().split("T")[0] };
+  const [appointment] = await db.insert(appointmentsTable).values(insertData).returning();
   res.status(201).json(appointment);
 });
 
@@ -67,7 +68,7 @@ router.get("/appointments/availability", async (req, res): Promise<void> => {
     .where(
       and(
         gte(appointmentsTable.date, fromDate),
-        gte(toDate, appointmentsTable.date),
+        lte(appointmentsTable.date, toDate),
         eq(appointmentsTable.status, "scheduled")
       )
     );
