@@ -4,26 +4,13 @@
   <meta charset="utf-8">
   <title>TP Windows & Doors</title>
   <script>
-    // GitHub Pages SPA fallback for subdirectory deployments.
-    // This file is served at /<repo-name>/404.html, so the base path
-    // is the directory containing this file.
-    (function() {
-      var currentPath = window.location.pathname;
-      var search = window.location.search;
-      var hash = window.location.hash;
-
-      // Save the full original path so index.html can restore it
-      sessionStorage.setItem("__spa_path", currentPath + search + hash);
-
-      // Compute the base path: the directory that contains 404.html
-      // e.g. if currentPath is "/time-powerwindows/gallery",
-      // we redirect to "/time-powerwindows/"
-      var basePath = currentPath.substring(0, currentPath.lastIndexOf("/") + 1);
-      // If we somehow ended up at root, fall back to "/"
-      if (!basePath || basePath === "") basePath = "/";
-
-      window.location.replace(basePath);
-    })();
+    // SPA fallback for root-level custom domain deployment.
+    // Save the original path so index.html can restore it,
+    // then redirect to the site root.
+    sessionStorage.setItem("__spa_path",
+      window.location.pathname + window.location.search + window.location.hash
+    );
+    window.location.replace("/");
   </script>
 </head>
 <body>
