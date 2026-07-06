@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "ocH0r-PdTGT3uknMdBFDh"
+uri = "file://tp-windows-github-pages.tar.gz"
+type = "unspecified"
+title = "TP Windows & Doors — GitHub Pages Site (ready to upload)"
