@@ -4,13 +4,26 @@
   <meta charset="utf-8">
   <title>TP Windows & Doors</title>
   <script>
-    // GitHub Pages SPA fallback: redirect any 404 path to index.html
-    // so client-side routing (wouter) can handle it
-    var path = window.location.pathname;
-    var search = window.location.search;
-    var hash = window.location.hash;
-    sessionStorage.setItem("__spa_path", path + search + hash);
-    window.location.replace("/");
+    // GitHub Pages SPA fallback for subdirectory deployments.
+    // This file is served at /<repo-name>/404.html, so the base path
+    // is the directory containing this file.
+    (function() {
+      var currentPath = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+
+      // Save the full original path so index.html can restore it
+      sessionStorage.setItem("__spa_path", currentPath + search + hash);
+
+      // Compute the base path: the directory that contains 404.html
+      // e.g. if currentPath is "/time-powerwindows/gallery",
+      // we redirect to "/time-powerwindows/"
+      var basePath = currentPath.substring(0, currentPath.lastIndexOf("/") + 1);
+      // If we somehow ended up at root, fall back to "/"
+      if (!basePath || basePath === "") basePath = "/";
+
+      window.location.replace(basePath);
+    })();
   </script>
 </head>
 <body>

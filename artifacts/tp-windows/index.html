@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <script>
-      // GitHub Pages SPA fallback: restore the path saved by 404.html
+      // GitHub Pages SPA fallback: restore the original path saved by 404.html
       (function() {
         var saved = sessionStorage.getItem("__spa_path");
         if (saved) {
           sessionStorage.removeItem("__spa_path");
-          if (saved !== "/" && saved !== window.location.pathname) {
+          // Only restore if the saved path is different from current
+          if (saved !== window.location.pathname) {
             window.history.replaceState(null, "", saved);
           }
         }
